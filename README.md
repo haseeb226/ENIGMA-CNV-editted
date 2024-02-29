@@ -11,7 +11,7 @@ The original shell scripts were not running on the windows computer, as they wer
 
 #### The original script: 
 ##### docker exec -it -w /usr/local/freesurfer/myfiles enigma-cnv-freesurfer sh 1a_enigma_runfreesurfer_loop.sh /usr/local/freesurfer/myfiles
-## The changed script: 
-### winpty docker exec -it -w //usr/local/freesurfer/myfiles enigma-cnv-freesurfer sh 1a_enigma_runfreesurfer_loop.sh //usr/local/freesurfer/myfiles
+#### The changed script: 
+##### winpty docker exec -it -w //usr/local/freesurfer/myfiles enigma-cnv-freesurfer sh 1a_enigma_runfreesurfer_loop.sh //usr/local/freesurfer/myfiles
 
 We had to choose an EOL conversion to finish making the scripts Unix friendly by using the Unix(LF) option in Notepad ++. Once this is done, the scripts are ready to be used with Windows. 
