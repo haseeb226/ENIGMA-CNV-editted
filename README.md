@@ -9,8 +9,8 @@ To run these scripts on windows you have to download Gitbash from the URL: (http
 
 The original shell scripts were not running on the windows computer, as they were made on a mac operating system. So, some changes were to be made. First, we had to add winpty, it is a windows-based software package that provides an interface similar to Unix. The syntax for binding was changed by adding an extra slash (/) in the command after usr, to make it functional in windows. The following is an example for the two changes that were made. 
 
-## The original script: 
-### docker exec -it -w /usr/local/freesurfer/myfiles enigma-cnv-freesurfer sh 1a_enigma_runfreesurfer_loop.sh /usr/local/freesurfer/myfiles
+#### The original script: 
+##### docker exec -it -w /usr/local/freesurfer/myfiles enigma-cnv-freesurfer sh 1a_enigma_runfreesurfer_loop.sh /usr/local/freesurfer/myfiles
 ## The changed script: 
 ### winpty docker exec -it -w //usr/local/freesurfer/myfiles enigma-cnv-freesurfer sh 1a_enigma_runfreesurfer_loop.sh //usr/local/freesurfer/myfiles
 
